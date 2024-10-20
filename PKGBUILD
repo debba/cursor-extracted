@@ -17,20 +17,17 @@ prepare() {
 	chmod +x "${srcdir}/cursor-${_cursor_version}.Appimage"
 	"${srcdir}/cursor-${_cursor_version}.Appimage" --appimage-extract >/dev/null
 	sed 's@AppRun@/usr/bin/cursor@g' -i "${srcdir}/squashfs-root/cursor.desktop"
-	cat >"${srcdir}/cursor.sh" <<EOF
-#!/usr/bin/env sh
-cd /opt/cursor
-./cursor "$@"
-EOF
 }
 
 package() {
-	install -Dm755 "${srcdir}/cursor.sh" "${pkgdir}/usr/bin/cursor"
 	install -Dm644 "${srcdir}/squashfs-root/cursor.desktop" "${pkgdir}/usr/share/applications/cursor.desktop"
 
-	mkdir -p "${pkgdir}/opt/cursor/"
-	cp -r "${srcdir}/squashfs-root/"* "${pkgdir}/opt/cursor/"
-	chmod -R go-w "${pkgdir}/opt/cursor"
+	find "${srcdir}/squashfs-root" -type f |
+		sed "s@^${srcdir}/squashfs-root/@@g" |
+		xargs -I{} install -D "${srcdir}/squashfs-root/{}" "${pkgdir}/opt/cursor/{}"
+
+	mkdir -p "${pkgdir}/usr/bin"
+	ln -sf "/opt/cursor/cursor" "${pkgdir}/usr/bin/cursor"
 
 	find "${srcdir}/squashfs-root/usr/share/icons/hicolor" -type f -name 'cursor.png' |
 		sed "s@^${srcdir}/squashfs-root/@@g" |
