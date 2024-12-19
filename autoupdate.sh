@@ -17,4 +17,4 @@ sed -r "s@^(_cursor_build=).+@\1${build}@g" -i PKGBUILD
 sed -r "s@^(sha512sums.+=\(').+('\))@\1${sum}\2@g" -i PKGBUILD
 
 makepkg --printsrcinfo > .SRCINFO
-git status
+git commit -am "${version}"
