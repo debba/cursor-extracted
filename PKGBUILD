@@ -1,5 +1,5 @@
-_cursor_version=0.44.11
-_cursor_build=250103fqxdt5u9z
+_cursor_version=0.45.1
+_cursor_build=2501213ljml5byg
 
 pkgname=cursor-extracted
 pkgver="${_cursor_version}"
@@ -9,7 +9,7 @@ arch=('x86_64')
 url='https://www.cursor.com/'
 license=('custom:Proprietary')
 source_x86_64=("cursor-${_cursor_version}.Appimage::https://download.todesktop.com/230313mzl4w4u92/cursor-${_cursor_version}-build-${_cursor_build}-x86_64.AppImage")
-sha512sums_x86_64=('1ec943d2fcc85b122561750c6d1a2d933e0708709792b51809bf450d01e4c8522ebd1eac8072ce5d6d6eb337ee9a05c134d96a20e779978f4de2e294d1275092')
+sha512sums_x86_64=('c44049bdc10c0f72794b8404a1f18c3e6f28734847b9dc615baeb966c09110cd011360f175b3d49faa1d8e59900d46fbc32ea3eef1cece30daecf3065740d83d')
 noextract=("${source[@]%%::*}")
 options=('!strip' '!debug')
 
