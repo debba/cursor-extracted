@@ -1,13 +1,13 @@
 pkgbase = cursor-extracted
 	pkgdesc = Cursor - The AI Code Editor (extracted from Appimage)
-	pkgver = 0.45.10
+	pkgver = 0.45.11
 	pkgrel = 1
 	url = https://www.cursor.com/
 	arch = x86_64
 	license = custom:Proprietary
 	options = !strip
 	options = !debug
-	source_x86_64 = cursor-0.45.10.Appimage::https://download.todesktop.com/230313mzl4w4u92/cursor-0.45.10-build-250205buadkzpea-x86_64.AppImage
-	sha512sums_x86_64 = df5744d81e87467a8ba713a9d2573537f5c018a46681b7d490e5351f5c999dd304226baa97b612fa4b5b06a8648b43cad54d6b71b99d0b366eeec0b642de05dc
+	source_x86_64 = cursor-0.45.11.Appimage::https://download.todesktop.com/230313mzl4w4u92/cursor-0.45.11-build-250207y6nbaw5qc-x86_64.AppImage
+	sha512sums_x86_64 = 60fbd46f7bde52eef4205a045e2805e26d7d97e3bb40c2a91aea3c9c23fce550867640a097f80c0f90271f8896815a4ba752ee7b11ce0de3c72d0854f310af6e
 
 pkgname = cursor-extracted
