@@ -1,5 +1,5 @@
-_cursor_version=0.46.10
-_cursor_build=7b3e0d45d4f952938dbd8e1e29c1b17003198481
+_cursor_version=0.46.11
+_cursor_build=ae378be9dc2f5f1a6a1a220c6e25f9f03c8d4e19
 
 pkgname=cursor-extracted
 pkgver="${_cursor_version}"
