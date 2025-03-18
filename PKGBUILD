@@ -1,5 +1,5 @@
-_cursor_version=0.47.5
-_cursor_build=53d6da1322f934a1058e7569ee0847b24879d18c
+_cursor_version=0.47.8
+_cursor_url=https://downloads.cursor.com/production/client/linux/x64/appimage/Cursor-0.47.8-82ef0f61c01d079d1b7e5ab04d88499d5af500e3.deb.glibc2.25-x86_64.AppImage
 
 pkgname=cursor-extracted
 pkgver="${_cursor_version}"
@@ -8,7 +8,7 @@ pkgdesc='Cursor - The AI Code Editor (extracted from Appimage)'
 arch=('x86_64')
 url='https://www.cursor.com/'
 license=('custom:Proprietary')
-source_x86_64=("cursor-${_cursor_version}.Appimage::https://anysphere-binaries.s3.us-east-1.amazonaws.com/production/client/linux/x64/appimage/Cursor-${_cursor_version}-${_cursor_build}.deb.glibc2.25-x86_64.AppImage")
+source_x86_64=("cursor-${_cursor_version}.Appimage::${_cursor_url}")
 sha512sums_x86_64=('SKIP')
 noextract=("${source[@]%%::*}")
 options=('!strip' '!debug')
