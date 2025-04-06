@@ -4,8 +4,8 @@ set -e
 
 curl 'https://www.cursor.com/api/download?platform=linux-x64&releaseTrack=latest' -o latest.json
 
-version="$(grep -Po '/Cursor\-\K[^\-]+' latest.json)"
-url="$(grep -Po ':"\K[^"]+' latest.json | head -n 1)"
+version="$(grep -Po '"version":"\K[^"]+' latest.json)"
+url="$(grep -Po '"downloadUrl":"\K[^"]+' latest.json)"
 
 rm latest.json
 
