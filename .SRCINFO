@@ -10,7 +10,7 @@ pkgbase = cursor-extracted
 	conflicts = cursor-bin
 	options = !strip
 	options = !debug
-	source_x86_64 = cursor-1.4.2.Appimage::https://downloads.cursor.com/production/07aa3b4519da4feab4761c58da3eeedd253a1671/linux/x64/Cursor-1.4.2-x86_64.AppImage
+	source_x86_64 = cursor-1.4.2.Appimage::https://downloads.cursor.com/production/d01860bc5f5a36b62f8a77cd42578126270db343/linux/x64/Cursor-1.4.2-x86_64.AppImage
 	sha512sums_x86_64 = SKIP
 
 pkgname = cursor-extracted
