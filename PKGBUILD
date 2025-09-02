@@ -1,5 +1,5 @@
-_cursor_version=1.5.5
-_cursor_url=https://downloads.cursor.com/production/823f58d4f60b795a6aefb9955933f3a2f0331d7b/linux/x64/Cursor-1.5.5-x86_64.AppImage
+_cursor_version=1.5.9
+_cursor_url=https://downloads.cursor.com/production/de327274300c6f38ec9f4240d11e82c3b0660b29/linux/x64/Cursor-1.5.9-x86_64.AppImage
 
 pkgname=cursor-extracted
 pkgver="${_cursor_version}"
